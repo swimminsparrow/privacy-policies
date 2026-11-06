@@ -57,4 +57,287 @@
         }
 
         .container {
-            max-width
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 32px 0 24px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--badge-bg);
+            color: var(--badge-text);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .highlight-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .highlight-icon {
+            font-size: 1.75rem;
+            margin-bottom: 8px;
+        }
+
+        .highlight-card h3 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .highlight-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: var(--text-muted);
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .app-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 8px;
+        }
+
+        .app-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px 20px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .app-card:hover {
+            background-color: var(--card-hover);
+            border-color: var(--primary);
+            transform: translateY(-1px);
+        }
+
+        .app-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .app-title-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .app-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .app-package {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .tag-safe {
+            background-color: var(--tag-safe);
+            color: var(--tag-safe-text);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 9999px;
+        }
+
+        .app-link-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary);
+            white-space: nowrap;
+        }
+
+        .note-box {
+            background-color: var(--badge-bg);
+            border-left: 4px solid var(--primary);
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin: 14px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            background-color: var(--border);
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 0 16px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 32px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-badge">⚖️ Legal & Compliance Center</div>
+            <h1>Application Privacy Hub</h1>
+            <p class="subtitle">Official privacy disclosures, permissions breakdown, and policies for all published applications.</p>
+        </header>
+
+        <div class="highlights">
+            <div class="highlight-card">
+                <div class="highlight-icon">🛡️</div>
+                <h3>Privacy by Design</h3>
+                <p>Applications are architected offline-first, minimizing data exposure by default.</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">📂</div>
+                <h3>Device Sovereignty</h3>
+                <p>Your documents, records, and personal media remain exclusively on your device.</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🔍</div>
+                <h3>Complete Transparency</h3>
+                <p>Clear, explicit breakdown of all runtime permissions and third-party dependencies.</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>📱 Active Applications</h2>
+            <p>Select an application below to inspect its dedicated Privacy Policy and compliance terms:</p>
+
+            <div class="app-list">
+                <!-- Document Resizer & Merge -->
+                <a class="app-card" href="photocompresskb-docmerge/privacy-policy.html">
+                    <div class="app-info">
+                        <div class="app-title-row">
+                            <span class="app-title">📄 Document Resizer & Merge</span>
+                            <span class="tag-safe">On-Device Processing</span>
+                        </div>
+                        <span class="app-package">swimminsparrow.photocompress.kb.docmerge</span>
+                    </div>
+                    <span class="app-link-btn">Read Policy &rarr;</span>
+                </a>
+
+                <!-- PillSOS Reminder -->
+                <a class="app-card" href="pillsos-reminder/privacy-policy.html">
+                    <div class="app-info">
+                        <div class="app-title-row">
+                            <span class="app-title">💊 PillSOS - Medication Reminder</span>
+                            <span class="tag-safe">100% Offline</span>
+                        </div>
+                        <span class="app-package">swimminsparrow.ricordamelo</span>
+                    </div>
+                    <span class="app-link-btn">Read Policy &rarr;</span>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>🔒 General Commitment & Scope</h2>
+            <p>
+                As an independent developer, software is constructed under strict <strong>Local-First and Privacy-First</strong> principles. 
+                Unless explicitly stated within a specific app's documentation, applications do not operate centralized user databases, track individual identities across the web, or sell personal data.
+            </p>
+            <div class="note-box">
+                <strong>Third-Party Notice:</strong> Certain free versions may integrate certified ad providers (such as Google AdMob) and purchase validation engines (such as RevenueCat) compliant with GDPR and Google Play Developer Policies. Complete SDK details are itemized inside each app's dedicated policy.
+            </div>
+        </section>
+
+        <section>
+            <h2>📬 Developer Contact</h2>
+            <p>
+                For legal inquiries, GDPR data requests, or support across any published application, reach out directly:
+            </p>
+            <p>
+                <strong>Developer / Publisher:</strong> swimminsparrow<br>
+                <strong>Contact Email:</strong> <a href="mailto:swimminsparrow@gmail.com">swimminsparrow@gmail.com</a>
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 swimminsparrow. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
