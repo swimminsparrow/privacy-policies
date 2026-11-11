@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Document Resizer & Merge</title>
     <meta name="description"
-        content="Privacy Policy for Document Resizer & Merge (swimminsparrow.photocompress.kb.docmerge) - 100% on-device, private document compression, photo resizing, and PDF merging.">
+        content="Privacy Policy for Document Resizer & Merge (swimminsparrow.compress.photo.kb.pdf.merge) - 100% on-device, private document compression, photo resizing, and PDF merging.">
     <style>
         :root {
             --primary: #4f46e5;
@@ -249,7 +249,7 @@
         <section>
             <h2>1. Overview & Core Philosophy</h2>
             <p>
-                <strong>Document Resizer & Merge</strong> (Package: <code>swimminsparrow.photocompress.kb.docmerge</code>)
+                <strong>Document Resizer & Merge</strong> (Package: <code>swimminsparrow.compress.photo.kb.pdf.merge</code>)
                 is built around an uncompromising <strong>Local-First and Privacy-by-Design</strong> architecture.
             </p>
             <p>
@@ -307,6 +307,10 @@
                     <tr>
                         <td><code>CAMERA</code> (Intent via FileProvider)</td>
                         <td>Optional: Used only when you tap the camera button to capture a physical document or ID card. The photo is saved directly into the app's private cache via secure <code>FileProvider</code>.</td>
+                    </tr>
+                    <tr>
+                        <td><code>READ_EXTERNAL_STORAGE / WRITE_EXTERNAL_STORAGE</code></td>
+                        <td>Used strictly on legacy devices (Android 9 and older) to read selected files and save results to Downloads/Pictures. Not requested on Android 10+.</td>
                     </tr>
                 </tbody>
             </table>
@@ -376,7 +380,7 @@
             </p>
             <p>
                 <strong>Developer / Publisher:</strong> swimminsparrow<br>
-                <strong>Application ID:</strong> <code>swimminsparrow.photocompress.kb.docmerge</code><br>
+                <strong>Application ID:</strong> <code>swimminsparrow.compress.photo.kb.pdf.merge</code><br>
                 <strong>Support Contact:</strong> <a href="mailto:swimminsparrow@gmail.com">swimminsparrow@gmail.com</a>
             </p>
         </section>
